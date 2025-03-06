@@ -1,0 +1,35 @@
+{
+  "name": "html-svg-converter",
+  "version": "1.0.0",
+  "description": "A tool to convert HTML to SVG",
+  "main": "index.js",
+  "bin": {
+    "html-svg-converter": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "html",
+    "svg",
+    "converter",
+    "vector",
+    "graphics"
+  ],
+  "author": "Yuta Moriyama",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "jsdom": "^21.1.0",
+    "svgdom": "^0.1.14",
+    "xmldom": "^0.6.0",
+    "yargs": "^17.7.1"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
