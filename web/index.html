@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML to SVG Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>HTML to SVG Converter</h1>
+    
+    <div class="converter">
+      <div class="input-section">
+        <h2>HTML Input</h2>
+        <div class="textarea-container">
+          <textarea id="html-input" placeholder="Enter your HTML code here..."></textarea>
+          <button id="sample-btn">Load Sample</button>
+        </div>
+        <div class="options">
+          <div class="option-group">
+            <label for="width">Width:</label>
+            <input type="number" id="width" value="800">
+          </div>
+          <div class="option-group">
+            <label for="height">Height:</label>
+            <input type="number" id="height" value="600">
+          </div>
+          <div class="option-group checkbox">
+            <input type="checkbox" id="preserve-aspect-ratio" checked>
+            <label for="preserve-aspect-ratio">Preserve Aspect Ratio</label>
+          </div>
+        </div>
+        <button id="convert-btn">Convert to SVG</button>
+      </div>
+      
+      <div class="output-section">
+        <h2>SVG Output</h2>
+        <div class="textarea-container">
+          <textarea id="svg-output" readonly></textarea>
+          <button id="copy-btn">Copy SVG</button>
+        </div>
+        <div class="preview">
+          <h3>Preview</h3>
+          <div id="preview-container"></div>
+        </div>
+        <a id="download-btn" class="download-btn" download="converted.svg">Download SVG</a>
+      </div>
+    </div>
+    
+    <div class="info">
+      <h2>About HTML to SVG Converter</h2>
+      <p>
+        This tool allows you to convert HTML code into SVG (Scalable Vector Graphics) format.
+        Simply paste your HTML in the left panel, adjust settings if needed, and click "Convert to SVG".
+      </p>
+      <p>
+        SVGs are ideal for graphics that need to scale to different sizes without losing quality.
+        They're perfect for logos, icons, illustrations and other web graphics.
+      </p>
+      <h3>Features</h3>
+      <ul>
+        <li>Convert HTML elements to SVG</li>
+        <li>Maintain styling and layout</li>
+        <li>Preview the resulting SVG</li>
+        <li>Download the SVG file</li>
+        <li>Copy SVG code to clipboard</li>
+      </ul>
+    </div>
+    
+    <footer>
+      <p>&copy; 2025 HTML to SVG Converter by <a href="https://github.com/Yuuta12-maker" target="_blank">Yuta Moriyama</a></p>
+      <p><a href="https://github.com/Yuuta12-maker/html-svg-converter" target="_blank">View on GitHub</a></p>
+    </footer>
+  </div>
+
+  <script src="browser.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
